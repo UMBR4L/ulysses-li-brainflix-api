@@ -30,36 +30,45 @@ This approach ensures that you systematically cover each part of your applicatio
 
 ## Initial Setup and Understanding
 - [x] Review Sprint 2: Understand the existing codebase and functionality.
-- [ ] Read Sprint 3 Instructions: Familiarize with new features and requirements.
+- [x] Read Sprint 3 Instructions: Familiarize with new features and requirements.
 
-## API Server Development
-- [ ] Create API Server: Set up a new Express.js server repository.
-  - [ ] Implement API endpoints (`GET /videos`, `GET /videos/:id`, `POST /videos`) matching the mock API.
-  - [ ] Serve video images as static assets.
-  - [ ] Use a JSON file for data persistence.
+## Functional Requirements:
 
-## Implementing Features
-- [ ] Enhance Video Upload Page:
-  - [ ] Implement form handling to POST new videos.
-  - [ ] Manage hardcoded image paths and placeholder data.
-- [ ] Add Video Deletion Feature: 
-  - [ ] Create UI delete button.
-  - [ ] Handle API requests for video deletion.
-- [ ] Implement Video Likes and Dislikes:
-  - [ ] Update UI with like and dislike buttons.
-  - [ ] Manage state and API calls for like/dislike actions.
-- [ ] Enhance Comment Functionality:
-  - [ ] Allow posting new comments.
-  - [ ] Implement comment deletion.
+### API Server:
 
-## Testing, Debugging, and Finalization
-- [ ] Test New Features: Ensure functionality and check for bugs.
-- [ ] Code Cleanup: Refactor for readability and maintainability.
-- [ ] Final Review: Check all requirements and feedback.
-- [ ] Submit the Project: Merge develop with main branch and submit.
+- [ ] Build a new API service that manages video data.
+  - [ ] The end-points and response structure of your API server must match that of the mock API server.
+  - [ ] The API must have the following end-points:
+    - [x] GET /videos: Responds with an array of videos.
+    - [x] GET /videos/:id: Responds with an object containing the details of the video with an id of :id.
+    - [x] POST /videos: Adds a new video to the video list. A unique id must be generated for each video added.
+- [ ] When submitting a new video from the form, it must POST to the API. You need to provide the hard-coded image path for the video thumbnail on the front-end within the request body.
+- [ ] Serve images as static assets from the Node server.
+- [ ] Data should persist on the server, even after restarting the Node server. Use a JSON file for data persistence.
+  - [ ] Use a single JSON file as the source of truth for all data. (video-details.json)
 
-## Optional: Diving Deeper
-- [ ] Additional Challenges (if main tasks are completed):
-  - [ ] Implement comments endpoints.
-  - [ ] Add custom video player features.
-  - [ ] Implement video liking functionality.
+### Video Upload Page:
+
+- [ ] Implement the video upload functionality.
+  - [ ] Create an event handler for the upload form so that when a user submits a new video, it posts the video to your API to save it to the list of videos.
+  - [ ] A new video should be persisted in a JSON file with the app data.
+  - [ ] No requirement for uploading an image file; hardcode an image path when creating a new video, corresponding to a static asset path from the Node server.
+  - [ ] Fill any missing data for a new video object with placeholder values, not with extra form inputs.
+
+## Visual Design Requirements:
+
+- [ ] The site must be responsive at and between breakpoints, closely resembling the mockups in the design package.
+- [ ] Resolve any inconsistencies with the design from previous sprints to match the mockups as closely as possible.
+- [ ] Incorporate any feedback provided around the visual design from previous sprints into this final sprint. This Sprint represents the completed product that the "client" has requested.
+
+## Implementation Requirements:
+
+- [ ] Incorporate any feedback provided around your implementation from previous sprints into this final Sprint. This Sprint represents the completed product that the "client" has requested.
+- [ ] Follow the proper folder structure and naming convention outlined in the Project Guidelines section in Synapse and the Sprint 3 folder Structure Diagram.
+- [ ] Use the provided assets.
+- [ ] Use multiple React components.
+- [ ] Use react-router-dom with multiple routes, one for each page.
+- [ ] Use SASS variables for CSS.
+- [ ] Use BEM principles when naming classes.
+- [ ] Use Flexbox for layout control.
+- [ ] Make sure to create a new repository for your server-side code and merge your develop branch with the main branch on both your client and server repositories before submission.
