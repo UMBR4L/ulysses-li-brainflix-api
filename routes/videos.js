@@ -51,17 +51,18 @@ router.get("/:id", (req, res) => {
 
 // POST /videos endpoint
 router.post("/", (req, res) => {
-  const { title, description } = req.body;
+  const { title, description, image } = req.body;
   const newVideo = {
     id: uuidv4(),
     title,
+    channel: "Mohan Muruge",
+    image: image, // hardcoded placeholder image
     description,
-    image: "../../public/images/image6.jpeg", // hardcoded placeholder image path
-    // Add other necessary fields with default values
     views: 0,
     likes: 0,
+    duration: "4:20",
     video: "https://project-2-api.herokuapp.com/stream",
-    timestamp: new Date().toISOString(),
+    timestamp: new Date().toLocaleString(),
     comments: [],
   };
   const data = readData();

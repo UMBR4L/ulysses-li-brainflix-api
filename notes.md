@@ -49,11 +49,11 @@ This approach ensures that you systematically cover each part of your applicatio
 
 ### Video Upload Page:
 
-- [ ] Implement the video upload functionality.
-  - [ ] Create an event handler for the upload form so that when a user submits a new video, it posts the video to your API to save it to the list of videos.
-  - [ ] A new video should be persisted in a JSON file with the app data.
-  - [ ] No requirement for uploading an image file; hardcode an image path when creating a new video, corresponding to a static asset path from the Node server.
-  - [ ] Fill any missing data for a new video object with placeholder values, not with extra form inputs.
+- [X] Implement the video upload functionality.
+  - [x] Create an event handler for the upload form so that when a user submits a new video, it posts the video to your API to save it to the list of videos.
+  - [x] A new video should be persisted in a JSON file with the app data.
+  - [x] No requirement for uploading an image file; hardcode an image path when creating a new video, corresponding to a static asset path from the Node server.
+  - [x] Fill any missing data for a new video object with placeholder values, not with extra form inputs.
 
 ## Visual Design Requirements:
 

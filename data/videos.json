@@ -301,23 +301,16 @@
     ]
   },
   {
-    "id": "e147aa07-1ba6-418d-a4e6-cac9332906e2",
-    "title": "new video by fred!!",
-    "description": "fred 4 ever!",
-    "image": "/images/default.jpg",
+    "id": "ef4cdb95-d1d4-40a8-b97e-5372738900c2",
+    "title": "testname",
+    "channel": "MohanMuruge",
+    "image": "/static/media/Upload-video-preview.313a407cf90c0668da07.jpg",
+    "description": "wow!",
     "views": 0,
     "likes": 0,
+    "duration": "4:20",
     "video": "https://project-2-api.herokuapp.com/stream",
-    "timestamp": "2024-01-16T00:27:18.064Z"
-  },
-  {
-    "id": "52affae3-ea18-468a-8688-506db146b798",
-    "title": "new video by fred!!",
-    "description": "fred 4 ever!",
-    "image": "../../public/images/image6.jpeg",
-    "views": 0,
-    "likes": 0,
-    "video": "https://project-2-api.herokuapp.com/stream",
-    "timestamp": "2024-01-16T00:51:31.743Z"
+    "timestamp": "2024-01-15, 10:12:32 p.m.",
+    "comments": []
   }
 ]
