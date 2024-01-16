@@ -36,16 +36,16 @@ This approach ensures that you systematically cover each part of your applicatio
 
 ### API Server:
 
-- [ ] Build a new API service that manages video data.
-  - [ ] The end-points and response structure of your API server must match that of the mock API server.
-  - [ ] The API must have the following end-points:
+- [x] Build a new API service that manages video data.
+  - [x] The end-points and response structure of your API server must match that of the mock API server.
+  - [x] The API must have the following end-points:
     - [x] GET /videos: Responds with an array of videos.
     - [x] GET /videos/:id: Responds with an object containing the details of the video with an id of :id.
     - [x] POST /videos: Adds a new video to the video list. A unique id must be generated for each video added.
-- [ ] When submitting a new video from the form, it must POST to the API. You need to provide the hard-coded image path for the video thumbnail on the front-end within the request body.
-- [ ] Serve images as static assets from the Node server.
-- [ ] Data should persist on the server, even after restarting the Node server. Use a JSON file for data persistence.
-  - [ ] Use a single JSON file as the source of truth for all data. (video-details.json)
+- [x] When submitting a new video from the form, it must POST to the API. You need to provide the hard-coded image path for the video thumbnail on the front-end within the request body.
+- [x] Serve images as static assets from the Node server.
+- [x] Data should persist on the server, even after restarting the Node server. Use a JSON file for data persistence.
+  - [x] Use a single JSON file as the source of truth for all data. (video-details.json)
 
 ### Video Upload Page:
 
